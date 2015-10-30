@@ -19,6 +19,8 @@ h5,
 h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    line-height:100%;
+    padding:0px;
 }
 
 .topnav {
@@ -61,6 +63,65 @@ h6 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
+.cntimg {
+    display:none;
+    position:absolute;
+    text-align:center;
+    width:100%;
+}
+
+#box-services {
+    background: url(../img/img_bgazul_g.jpg) center repeat-x #2F4F80;
+    height: auto;
+    min-height: 400px;
+    position:relative;
+    margin-bottom:1px;
+    color: #FFFFFF;
+}
+
+.title-contact {
+    background:#39AFB9;
+    padding-bottom:10px;
+    color:#FFFFFF;
+}
+
+.align-center {
+    text-align:center;
+}
+
+.icon-carousel {
+    cursor:pointer;
+}
+
+.ul-forca {
+    list-style:none;
+}
+
+.ul-slider {
+    list-style:none;
+    padding-left: 0px;
+}
+
+.size-icon-slide {
+    font-size:130px !important;
+}
+
+.title-1 {
+    font-size:36px;
+}
+
+.title-2 {
+    display: block;
+    top:0px;
+    font-size:25px;
+    font-weight: normal;
+    padding-left:50px;
+}
+
+.title-3 {
+    color:#2F4F80;
+}
+
 @media(max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
@@ -94,13 +155,64 @@ h6 {
 
 .content-section-a {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: #989797;
+    color:#FFFFFF;
+}
+
+.ul-resumo > li > a {
+    color: #2F4F80;
 }
 
 .content-section-b {
-    padding: 50px 0;
+    padding: 20px 0px 60px 0px;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
+    background-color: #d0d0d0;
+}
+
+.port-selec > .divButton {
+    background: #2F4F80 !important;
+}
+
+.divButton {
+    color: #FFFFFF;
+    background: #379dff;
+    min-height: 30px;
+    text-align: center;
+    padding: 10px 5px;
+    border: none;
+    margin: 0px -12px 2px -12px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.divButton:hover {
+    background: #2F4F80;
+}
+
+.clr{
+    clear:both;
+}
+
+.title-forcas{
+    font-size:23px;
+    font-weight:bold;
+    margin-bottom:15px;
+    color:#2F4F80;
+}
+
+.conteudo-forcas {
+    position:relative;
+    display:none;
+    margin-top:40px;
+}
+
+.menu-port {
+    font-size: 25px;
+    color: #FFFFFF;
 }
 
 .section-heading {
