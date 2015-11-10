@@ -183,8 +183,12 @@ a:focus {
     }
 }
 
-.oos {
-    background: url(../img/oos-bg.jpg) no-repeat bottom center scroll;   
+.oss {
+     background: url(../img/oos-bg.jpg) no-repeat bottom center scroll;   
+}
+
+.who {
+    background: url(../img/who-bg.jpg) no-repeat bottom center scroll;   
 }
 
 .btn-circle {
