@@ -183,6 +183,10 @@ a:focus {
     }
 }
 
+.oos {
+    background: url(../img/oos-bg.jpg) no-repeat bottom center scroll;   
+}
+
 .btn-circle {
     width: 70px;
     height: 70px;

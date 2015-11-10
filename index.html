@@ -75,7 +75,7 @@
     </nav>
 
     <!-- Intro Header -->
-    <header class="intro">
+    <header id="home" class="intro">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
@@ -91,32 +91,37 @@
         </div>
     </header>
     
-    <section id="ossprojects" class="container content-section text-center">
-        <!-- Example row of columns -->
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Principais projetos OSS</h2>
+    <header id="ossprojects" class="intro oos">
+        <div class="intro-body">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
-                        <h2>CodeCracker</h2>
-                        <a href="https://www.nuget.org/packages/codecracker"><img src="http://img.shields.io/nuget/dt/codecracker.svg"/></a>
-                        <p>Uma biblioteca de <em>analyzers</em> para C# e VB que usa <a href="https://github.com/dotnet/roslyn"/>Roslyn</a> para auxiliar <em>refactorings</em>, analise de código e outras coisas bacanas.</p>
-                        <p><a class="btn btn-default" href="http://github.com/code-cracker" role="button">Mais &raquo;</a></p>
-                    </div>
-                    <div class="col-md-5 col-md-offset-2">
-                        <h2>FluentIL</h2>
-                        <a href="https://www.nuget.org/packages/fluentil"><img src="http://img.shields.io/nuget/dt/fluentil.svg"/></a>
-                        <p>Você gosta de <em>emitting</em>? Precisa? FluentIL é uma biblioteca que facilita <em>emitting</em> para .NET.</p>
-                        <p><a class="btn btn-default" href="http://github.com/fluentil" role="button">Mais &raquo;</a></p>
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Principais projetos OSS</h2><br/>
+                        <div class="col-md-5">
+                            <h2>CodeCracker</h2>
+                            <a href="https://www.nuget.org/packages/codecracker"><img src="http://img.shields.io/nuget/dt/codecracker.svg"/></a>
+                            <p>Uma biblioteca de <em>analyzers</em> para C# e VB que usa <a href="https://github.com/dotnet/roslyn"/>Roslyn</a> para auxiliar <em>refactorings</em>, analise de código e outras coisas bacanas.</p>
+                            <p><a class="btn btn-default" href="http://github.com/code-cracker" role="button">Mais &raquo;</a></p>
+                        </div>
+                        <div class="col-md-5 col-md-offset-2">
+                            <h2>FluentIL</h2>
+                            <a href="https://www.nuget.org/packages/fluentil"><img src="http://img.shields.io/nuget/dt/fluentil.svg"/></a>
+                            <p>Você gosta de <em>emitting</em>? Precisa? FluentIL é uma biblioteca que facilita <em>emitting</em> para .NET.</p>
+                            <p><a class="btn btn-default" href="http://github.com/fluentil" role="button">Mais &raquo;</a></p>
+                        </div>
                     </div>
                 </div>
-                
-                <p>Há bem mais para ver no <a href="https://github.com/ElemarJR/">meu Github</a></p>
-            
-                <hr>
+                <div class="row">
+                    <p>Há bem mais para ver no <a href="https://github.com/ElemarJR/">meu Github</a></p>
+                    <a href="#about" class="btn btn-circle page-scroll">
+                        <i class="fa fa-angle-double-down animated"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    </section> <!-- /container -->
+    </header>
+    
+    <!-- /container -->
 
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
