@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
+    margin: 0 0 15px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
@@ -147,7 +147,6 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -183,12 +182,37 @@ a:focus {
     }
 }
 
+.opening {
+    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+
 .oss {
      background: url(../img/oos-bg.jpg) no-repeat bottom center scroll;   
+    background-size: cover;
+    -o-background-size: cover;
+
 }
 
 .who {
     background: url(../img/who-bg.jpg) no-repeat bottom center scroll;   
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+
+.services {
+    background: url(../img/services-bg.jpg) no-repeat bottom center scroll;   
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.contact {
+    background: url(../img/contact-bg.jpg) no-repeat bottom center scroll;   
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 .btn-circle {
