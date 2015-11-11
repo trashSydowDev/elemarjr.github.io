@@ -3133,7 +3133,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-success {
   color: #fff;
   background-color: #5cb85c;
-  border-color: #4cae4c;
+  border-color: #00EB00;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -3169,7 +3169,7 @@ fieldset[disabled] .btn-success:active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
   background-color: #5cb85c;
-  border-color: #4cae4c;
+  border-color: #00EB00;
 }
 .btn-success .badge {
   color: #5cb85c;
