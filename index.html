@@ -245,8 +245,12 @@
                 <div class="row">
                     <div id="disqus_thread"></div>
                     <script>
+                        
+                        var disqus_config = function () { 
+                            this.language = "pt_BR";
+                        };
+                        
                         (function() { // DON'T EDIT BELOW THIS LINE
-                            this.language = "pt_BR"
                             var d = document, s = d.createElement('script');
                             
                             s.src = 'http://elemarjr.disqus.com/embed.js';
