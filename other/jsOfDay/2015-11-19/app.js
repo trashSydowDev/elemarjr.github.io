@@ -79,7 +79,9 @@ var App = (function () {
         var that = this;
         var iterate = function () {
             that.engine.clear();
-            that.stars.forEach(function (star) { return star.update().draw(_this.engine); });
+            that.stars.forEach(function (star) { return star
+                .update()
+                .draw(_this.engine); });
             setTimeout(iterate, 33);
         };
         iterate();
@@ -87,5 +89,8 @@ var App = (function () {
     return App;
 })();
 window.onload = function () {
-    new App().init().run();
+    new App()
+        .init()
+        .run();
 };
+//# sourceMappingURL=app.js.map
