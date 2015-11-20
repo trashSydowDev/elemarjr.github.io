@@ -282,5 +282,4 @@ window.onload = () => {
     new App()
         .init()
         .run();
-
 };
