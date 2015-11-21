@@ -12,10 +12,10 @@
     <title>Elemar JR</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../../../css/grayscale.css" rel="stylesheet">
+    <link href="../../css/grayscale.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -38,7 +38,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="http://elemarjr.github.io/en.html">
+                <a class="navbar-brand page-scroll" href="http://elemarjr.github.io">
                     <span class="light">Elemar Jr</span>
                 </a>
             </div>
@@ -50,8 +50,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h2>Everyday JS - Spheres</h2>
-                        <p>November 21, 2015 | <a href="http://elemarjr.github.io/other/jsOfDay/2015-11-21/pt-br.html" role="button">Fala português?</a></p>
+                        <h2>Everyday JS - BarnsleyFern</h2>
+                        <p>22 de novembro de 2015 | <a href="http://elemarjr.github.io/other/jsOfDay/2015-11-22/en.html" role="button">Do you speak english?</a></p>
                     </div>
                 </div>
                 <div class="row">
@@ -61,37 +61,48 @@
                 </div>
                 <div class="row">
                     <p>
-                        <a class="btn btn-default" href="http://elemarjr.github.io/other/jsOfDay/2015-11-20/en.html">&laquo;</a>
-                        <a class="btn btn-default" href="https://github.com/ElemarJR/elemarjr.github.io/tree/master/other/jsOfDay/2015-11-21" role="button">Source code</a>
-                        <a class="btn btn-default" href="http://elemarjr.github.io/en.html" role="button">main page</a>
-                        <a class="btn btn-default" href="http://elemarjr.github.io/other/jsOfDay/2015-11-22/en.html">&raquo;</a>
-                        </p>
-
+                        <a class="btn btn-default" href="http://elemarjr.github.io/other/jsOfDay/2015-11-21/pt-br.html">&laquo;</a>
+                        <a class="btn btn-default" href="https://github.com/ElemarJR/elemarjr.github.io/tree/master/other/jsOfDay/2015-11-22" role="button">Código fonte</a>
+                        <a class="btn btn-default" href="http://elemarjr.github.io" role="button">Página principal</a></p>
                 </div>
+
                 <div class="row">
                     <div id="disqus_thread"></div>
                     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
                 </div>
-                <script>
-                    var disqus_config = function () { 
-                        this.language = "en";
-                        this.page.identifier= "2015-11-21";
-                    };
-                    
-                    (function() { // DON'T EDIT BELOW THIS LINE
-                        var d = document, s = d.createElement('script');
-                        
-                        s.src = 'http://elemarjr.disqus.com/embed.js';
-                        
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                    })();
-                </script>
+
             </div>
         </div>
     </header>
 </body>
-<script src="app.js"></script>
+
+<script>
+function loadjsfile(filename){
+    var fileref=document.createElement('script')
+    fileref.setAttribute("type","text/javascript")
+    fileref.setAttribute("src", filename)
+    document.getElementsByTagName("body")[0].appendChild(fileref)
+}
+function getQueryParams(qs) {
+    qs = qs.split('+').join(' ');
+
+    var params = {},
+        tokens,
+        re = /[?&]?([^=]+)=([^&]*)/g;
+
+    while (tokens = re.exec(qs)) {
+        params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+    }
+
+    return params;
+}
+</script>
+
+<script>
+    var params = getQueryParams(document.location.search)
+    loadjsfile("./" + params.y + "-" + params.m + "-"  + params.d + "/app.js")
+</script>
+
 
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -102,5 +113,24 @@
     ga('create', 'UA-33607022-1', 'auto');
     ga('send', 'pageview');
 </script>
+
+<script src="../../js/angular.min.js"></script>
+
+<script>
+    var disqus_config = function () { 
+        this.language = "pt_BR";
+        this.page.identifier= params.y + "-" + params.m + "-" + params.d;
+    };
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = 'http://elemarjr.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
 
 </html>
