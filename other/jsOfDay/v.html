@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="jsapp">
 
 <head>
 
@@ -45,12 +45,12 @@
          </div>
     </nav>
 
-    <header id="jsofday" class="intro">
+    <header id="jsofday" class="intro" ng-controller="ctrl">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h2>Everyday JS - BarnsleyFern</h2>
+                        <h2>Everyday JS - {{ctrl.title}}</h2>
                         <p>22 de novembro de 2015 | <a href="http://elemarjr.github.io/other/jsOfDay/2015-11-22/en.html" role="button">Do you speak english?</a></p>
                     </div>
                 </div>
@@ -101,6 +101,7 @@ function getQueryParams(qs) {
 <script>
     var params = getQueryParams(document.location.search)
     loadjsfile("./" + params.y + "-" + params.m + "-"  + params.d + "/app.js")
+    loadjsfile("./" + params.y + "-" + params.m + "-"  + params.d + "/desc.js")
 </script>
 
 
