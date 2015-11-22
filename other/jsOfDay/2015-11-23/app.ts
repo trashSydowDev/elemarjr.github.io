@@ -6,13 +6,6 @@ module MathHelper {
     }
 }
 
-interface IPointXY { 
-    x: number;
-    y: number;
-}
-
-
-
 class RenderingEngine {
     private context: CanvasRenderingContext2D
     constructor(
@@ -45,7 +38,6 @@ class RenderingEngine {
     };
 }
     
-
 class App {
     private engine: RenderingEngine;
     
